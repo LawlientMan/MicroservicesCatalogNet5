@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace Catalog.API.Repositories
 {
-    interface IProductRepository
+    public interface IProductRepository
     {
         Task<IEnumerable<Product>> GetProducts();
         Task<Product> GetProduct(string id);
